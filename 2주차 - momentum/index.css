@@ -1,0 +1,136 @@
+body {
+    background-color: #2c3e50;
+}
+
+
+/* COMMON */
+
+input {
+    height: 20px;
+    font-size: 15px;
+}
+
+section.to-do-center {
+    width: 500px;
+    height: 700px;
+    margin: 0 auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.js-weather {
+    text-align: right;
+    padding-top: 30px;
+    padding-right: 50px;
+}
+
+.js-clock {
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.js-clock span.clock {
+    font-weight: 700;
+    font-size: 80px;
+    margin: 10px;
+}
+
+.js-clock h2 span.name {
+    font-size: 30px;
+}
+
+.js-clock span.time-left {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+ul.js-toDoList {
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 0;
+    width: 80%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    overflow-y: auto;
+}
+
+ul.js-toDoList li {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 20px;
+}
+
+ul.js-toDoList li.complete {
+    color: rgb(109, 105, 105);
+    text-decoration: line-through;
+    pointer-events: none;
+}
+
+ul.js-toDoList li.complete button {
+    color: rgb(109, 105, 105);
+}
+
+ul.js-toDoList li button {
+    font-size: 20px;
+    background: transparent;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+ul.js-toDoList li button.btn_remove:hover {
+    color: rgb(236, 55, 55);
+}
+
+ul.js-toDoList li button.btn_check:hover {
+    color: rgb(39, 175, 11);
+}
+
+.btn {
+    cursor: pointer;
+}
+
+body {
+    color: #fff;
+    height: 95vh;
+}
+
+.clicked {
+    color: #7f8c8d;
+}
+
+.form,
+.greetings {
+    display: none;
+}
+
+.showing {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.bgImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn 0.5s linear;
+}
